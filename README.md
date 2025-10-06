@@ -29,6 +29,6 @@ Backend:
 Flask 
  
 ## OUTPUT ##
-<img width="1891" height="987" alt="Image" src="https://github.com/user-attachments/assets/a3c97461-8097-4a1b-850c-c3e4efe957e5" />
-<img width="1882" height="983" alt="Image" src="https://github.com/user-attachments/assets/93eaf306-507c-4fa8-8a56-499088a6ce97" />
-<img width="1891" height="986" alt="Image" src="https://github.com/user-attachments/assets/6e482632-6207-42ba-bd71-f22f26ddc8c5" />
+<img width="1919" height="960" alt="Image" src="https://github.com/user-attachments/assets/5e131653-66b4-40ab-ab5b-2695b793257b" />
+<img width="1919" height="953" alt="Image" src="https://github.com/user-attachments/assets/89bbd511-5a25-4997-9a7b-65606d09e3a9" />
+<img width="1919" height="957" alt="Image" src="https://github.com/user-attachments/assets/e5f529d1-d0d2-4e42-b92c-dd823833fd73" />
