@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMEstudywithME - E-Learning Platform</title>
+    <meta name="description" content="Master new skills with our comprehensive online courses">
+    <meta property="og:title" content="COMEstudywithME - E-Learning Platform">
+    <meta property="og:description" content="Master new skills with our comprehensive online courses">
+    <meta property="og:image" content="https://imagedelivery.net/None/ae4a6525jbfa6j4b5bj8b9cje4b66edf0ced/public">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="COMEstudywithME - E-Learning Platform">
+    <meta name="twitter:description" content="Master new skills with our comprehensive online courses">
+    <meta name="twitter:image" content="https://imagedelivery.net/None/ae4a6525jbfa6j4b5bj8b9cje4b66edf0ced/public">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📚</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-content">
+        <h1>COMEstudywithME</h1>
+        <ul>
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('courses')">Courses</a></li>
+            <li><a href="#" onclick="showPage('profile')">Dashboard</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div id="home" class="page">
+    <section class="hero">
+        <div class="container">
+            <h1>Learn Without Limits</h1>
+            <p>Master new skills with our comprehensive online courses</p>
+            <button class="btn" onclick="showPage('courses')">Start Learning</button>
+        </div>
+    </section>
+
+    <section class="courses">
+        <div class="container">
+            <h2 class="section-title">Featured Courses</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLdRrVvAApRC3oZUJKG6sPVsDNdAuBv8qvIw&s" alt="js Course">
+                    <div class="card-content">
+                        <h3>JavaScript Fundamentals</h3>
+                        <p>Learn the basics of JavaScript programming</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%;"></div>
+                        </div>
+                        <p class="progress-text">60% Complete</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGqVYJORLYdYRbVKw_4RHHklbpVKC7AL7hNQ&s" alt="React Course">
+                    <div class="card-content">
+                        <h3>React Development</h3>
+                        <p>Build modern web applications with React</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%;"></div>
+                        </div>
+                        <p class="progress-text">Not Started</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.weblineindia.com/wp-content/uploads/2023/10/NodeJS-for-Backend.jpg" alt="Node.js Course">
+                    <div class="card-content">
+                        <h3>Node.js Backend</h3>
+                        <p>Create server-side applications with Node.js</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%;"></div>
+                        </div>
+                        <p class="progress-text">Complete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div id="courses" class="page hidden">
+    <section class="courses">
+        <div class="container">
+            <h2 class="section-title">All Courses</h2>
+            <div class="grid">
+                <div class="card" onclick="playVideo('JavaScript Fundamentals', 'https://www.youtube.com/embed/PkZNo7MFNFg')">
+                    <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="JavaScript Course">
+                    <div class="card-content">
+                        <h3>JavaScript Fundamentals</h3>
+                        <p class="course-info">12 lessons • 8 hours</p>
+                        <button class="btn">Watch Course</button>
+                    </div>
+                </div>
+                <div class="card" onclick="playVideo('React Development', 'https://www.youtube.com/embed/Ke90Tje7VS0')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGqVYJORLYdYRbVKw_4RHHklbpVKC7AL7hNQ&s" alt="React Course">
+                    <div class="card-content">
+                        <h3>React Development</h3>
+                        <p class="course-info">15 lessons • 12 hours</p>
+                        <button class="btn">Watch Course</button>
+                    </div>
+                </div>
+                <div class="card" onclick="playVideo('Node.js Backend', 'https://www.youtube.com/embed/RLtyhwFtXQA')">
+                    <img src="https://www.weblineindia.com/wp-content/uploads/2023/10/NodeJS-for-Backend.jpg" alt="Node.js Course">
+                    <div class="card-content">
+                        <h3>Node.js Backend</h3>
+                        <p class="course-info">10 lessons • 6 hours</p>
+                        <button class="btn">Watch Course</button>
+                    </div>
+                </div>
+                <div class="card" onclick="playVideo('HTML & CSS', 'https://www.youtube.com/embed/UB1O30fR-EE')">
+                    <img src="https://www.moople.in/blog/wp-content/uploads/2024/11/html-css-full-course-20-11-2024.jpg" alt="HTML CSS Course">
+                    <div class="card-content">
+                        <h3>HTML & CSS Basics</h3>
+                        <p class="course-info">8 lessons • 5 hours</p>
+                        <button class="btn">Watch Course</button>
+                    </div>
+                </div>
+                <div class="card" onclick="playVideo('Python Programming', 'https://www.youtube.com/embed/rfscVS0vtbw')">
+                    <img src="https://img-c.udemycdn.com/course/750x422/6053693_14e0_2.jpg" alt="Python Course">
+                    <div class="card-content">
+                        <h3>Python Programming</h3>
+                        <p class="course-info">18 lessons • 14 hours</p>
+                        <button class="btn">Watch Course</button>
+                    </div>
+                </div>
+                <div class="card" onclick="playVideo('Database Design', 'https://www.youtube.com/embed/ztHopE5Wnpc')">
+                    <img src="https://img-c.udemycdn.com/course/750x422/6115973_ba9e_16.jpg" alt="Database Course">
+                    <div class="card-content">
+                        <h3>Database Design</h3>
+                        <p class="course-info">12 lessons • 9 hours</p>
+                        <button class="btn">Watch Course</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div id="profile" class="page hidden">
+    <section class="profile">
+        <div class="container">
+            <h2 class="section-title">Learning Dashboard</h2>
+            <div class="dashboard">
+                <div class="stats">
+                    <h3>Your Progress</h3>
+                    <p><strong>Courses Enrolled:</strong> 6</p>
+                    <p><strong>Courses Completed:</strong> 1</p>
+                    <p><strong>Hours Learned:</strong> 34</p>
+                    <p><strong>Certificates Earned:</strong> 1</p>
+                    <div class="recent-activity">
+                        <h4>Recent Activity</h4>
+                        <div>
+                            <p class="activity-item">✅ Completed Node.js Backend</p>
+                            <p class="activity-item">📚 Started React Development</p>
+                            <p class="activity-item">⏳ JavaScript Fundamentals - 60% done</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-section">
+                    <div class="video-container" id="videoPlayer">
+                        <div class="video-placeholder">
+                            <h3>Video Player</h3>
+                            <p>Click on a course to start watching</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 COMEstudywithME. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    function showPage(pageId) {
+        document.querySelectorAll('.page').forEach(page => {
+            page.classList.add('hidden');
+        });
+        document.getElementById(pageId).classList.remove('hidden');
+
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.classList.remove('active');
+        });
+        // event.target might be the SVG icon inside the link, so find the parent <a>
+        let targetLink = event.target.closest('a');
+        if (targetLink) {
+            targetLink.classList.add('active');
+        }
+    }
+
+    function playVideo(title, videoUrl) {
+        const player = document.getElementById('videoPlayer');
+        player.innerHTML = `
+            <iframe src="${videoUrl}" 
+                    width="100%" height="100%" 
+                    frameborder="0" 
+                    allowfullscreen>
+            </iframe>
+        `;
+        showPage('profile');
+    }
+
+    function updateProgress() {
+        const progressBars = document.querySelectorAll('.progress-fill');
+        progressBars.forEach((bar, index) => {
+            if (index === 0) { // Only update the first featured course for demonstration
+                let width = parseInt(bar.style.width) || 60;
+                if (width < 100) {
+                    width += Math.random() * 5;
+                    bar.style.width = Math.min(width, 100) + '%';
+                    bar.parentNode.nextElementSibling.textContent = 
+                        width >= 100 ? 'Complete' : Math.floor(width) + '% Complete';
+                }
+            }
+        });
+    }
+    
+    // Set the initial active class on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        // Find the 'Home' link specifically and set it active
+        const homeLink = document.querySelector('.nav a[onclick*="showPage(\'home\')"]');
+        if (homeLink) {
+            homeLink.classList.add('active');
+        }
+    });
+
+    setInterval(updateProgress, 3000);
+</script>
+</body>
+</html>

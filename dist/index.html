@@ -1,0 +1,255 @@
+<!DOCTYPE  html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COMEstudywithME- E-Learning Platform</title>
+  <meta name="description" content=" Master new skills with our comprehensive online courses">
+  <meta property="og:title" content="COMEstudywithME- E-Learning Platform">
+  <meta property="og:description" content=" Master new skills with our comprehensive online courses">
+  <meta property="og:image" content="https://imagedelivery.net/None/ae4a6525jbfa6j4b5bj8b9cje4b66edf0ced/public">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="COMEstudywithME- E-Learning Platform">
+  <meta name="twitter:description" content=" Master new skills with our comprehensive online courses">
+  <meta name="twitter:image" content="https://imagedelivery.net/None/ae4a6525jbfa6j4b5bj8b9cje4b66edf0ced/public">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📚</text></svg>">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; }
+    .nav { background: #1f2937; color: rgb(26, 216, 20); padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 100; }
+    .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+    .nav ul { list-style: none; display: flex; gap: 2rem; }
+    .nav a { color: rgb(107, 120, 143); text-decoration: none; font-weight: 500; }
+    .nav a:hover { color: #60a5fa; }
+    .hero { background: linear-gradient(135deg, #4b7c56 0%, #764ba2 100%); color: rgb(255, 255, 255); padding: 120px 2rem 80px; text-align: center; }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+    .btn { background: #a396b7; color: white; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; }
+    .btn:hover { background: #264587; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .courses { padding: 4rem 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .card { background: rgb(223, 235, 235); border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.2s; }
+    .card:hover { transform: translateY(-4px); }
+    .card img { width: 100%; height: 200px; -o-object-fit: cover; object-fit: cover; }
+    .card-content { padding: 1.5rem; }
+    .progress-bar { background: #e5e7eb; height: 8px; border-radius: 4px; margin: 1rem 0; }
+    .progress-fill { background: #389817; height: 100%; border-radius: 4px; transition: width 0.3s; }
+    .profile { background: #083f76; padding: 4rem 0; }
+    .dashboard { display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; margin-top: 2rem; }
+    .stats { background: rgb(159, 215, 227); padding: 2rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .video-container { position: relative; width: 100%; height: 400px; background: #000; border-radius: 8px; }
+    .video-placeholder { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: rgb(148, 125, 161); text-align: center; }
+    .footer { background: #1f2937; color: rgb(140, 148, 120); padding: 3rem 0; text-align: center; }
+    .hidden { display: none; }
+    .active { background: #34455f; color: rgb(138, 160, 144); }
+    h2 { font-size: 2rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .text-sm { font-size: 0.875rem; }
+    .text-green { color: #10b981; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-content">
+      <h1>📚 Smart Buddy</h1>
+      <ul>
+        <li><a href="#" onclick="showPage('home')">Home</a></li>
+        <li><a href="#" onclick="showPage('courses')">Courses</a></li>
+        <li><a href="#" onclick="showPage('profile')">Dashboard</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="home" class="page">
+    <section class="hero">
+      <div class="container">
+        <h1>Learn Without Limits</h1>
+        <p>Master new skills with our comprehensive online courses</p>
+        <button class="btn" onclick="showPage('courses')">Start Learning</button>
+      </div>
+    </section>
+
+    <section class="courses">
+      <div class="container">
+        <h2>Featured Courses</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1629360021730-3d258452c425?ixid=M3w3MjUzNDh8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBsZWFybmluZyUyMGVkdWNhdGlvbiUyMHN0dWRlbnRzJTIwbGFwdG9wfGVufDB8fHx8MTc1NjgzMjIyNHww&ixlib=rb-4.1.0&fit=fillmax&h=600&w=1200" alt="JavaScript Course">
+            <div class="card-content">
+              <h3>JavaScript Fundamentals</h3>
+              <p>Learn the basics of JavaScript programming</p>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%;"></div>
+              </div>
+              <p class="text-sm text-green">60% Complete</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1629360021730-3d258452c425?ixid=M3w3MjUzNDh8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBsZWFybmluZyUyMGVkdWNhdGlvbiUyMHN0dWRlbnRzJTIwbGFwdG9wfGVufDB8fHx8MTc1NjgzMjIyNHww&ixlib=rb-4.1.0&fit=fillmax&h=600&w=1200" alt="React Course">
+            <div class="card-content">
+              <h3>React Development</h3>
+              <p>Build modern web applications with React</p>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%;"></div>
+              </div>
+              <p class="text-sm">Not Started</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1629360021730-3d258452c425?ixid=M3w3MjUzNDh8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBsZWFybmluZyUyMGVkdWNhdGlvbiUyMHN0dWRlbnRzJTIwbGFwdG9wfGVufDB8fHx8MTc1NjgzMjIyNHww&ixlib=rb-4.1.0&fit=fillmax&h=600&w=1200" alt="Node.js Course">
+            <div class="card-content">
+              <h3>Node.js Backend</h3>
+              <p>Create server-side applications with Node.js</p>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%;"></div>
+              </div>
+              <p class="text-sm text-green">Complete</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="courses" class="page hidden">
+    <section class="courses" style="margin-top: 80px;">
+      <div class="container">
+        <h2>All Courses</h2>
+        <div class="grid">
+          <div class="card" onclick="playVideo('JavaScript Fundamentals', 'https://www.youtube.com/embed/PkZNo7MFNFg')">
+            <img src="https://images.unsplash.com/photo-1629360021730-3d258452c425?ixid=M3w3MjUzNDh8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBsZWFybmluZyUyMGVkdWNhdGlvbiUyMHN0dWRlbnRzJTIwbGFwdG9wfGVufDB8fHx8MTc1NjgzMjIyNHww&ixlib=rb-4.1.0&fit=fillmax&h=600&w=1200" alt="JavaScript Course">
+            <div class="card-content">
+              <h3>JavaScript Fundamentals</h3>
+              <p>12 lessons • 8 hours</p>
+              <button class="btn">Watch Course</button>
+            </div>
+          </div>
+          <div class="card" onclick="playVideo('React Development', 'https://www.youtube.com/embed/Ke90Tje7VS0')">
+            <img src="https://images.unsplash.com/photo-1629360021730-3d258452c425?ixid=M3w3MjUzNDh8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBsZWFybmluZyUyMGVkdWNhdGlvbiUyMHN0dWRlbnRzJTIwbGFwdG9wfGVufDB8fHx8MTc1NjgzMjIyNHww&ixlib=rb-4.1.0&fit=fillmax&h=600&w=1200" alt="React Course">
+            <div class="card-content">
+              <h3>React Development</h3>
+              <p>15 lessons • 12 hours</p>
+              <button class="btn">Watch Course</button>
+            </div>
+          </div>
+          <div class="card" onclick="playVideo('Node.js Backend', 'https://www.youtube.com/embed/RLtyhwFtXQA')">
+            <img src="https://images.unsplash.com/photo-1629360021730-3d258452c425?ixid=M3w3MjUzNDh8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBsZWFybmluZyUyMGVkdWNhdGlvbiUyMHN0dWRlbnRzJTIwbGFwdG9wfGVufDB8fHx8MTc1NjgzMjIyNHww&ixlib=rb-4.1.0&fit=fillmax&h=600&w=1200" alt="Node.js Course">
+            <div class="card-content">
+              <h3>Node.js Backend</h3>
+              <p>10 lessons • 6 hours</p>
+              <button class="btn">Watch Course</button>
+            </div>
+          </div>
+          <div class="card" onclick="playVideo('HTML & CSS', 'https://www.youtube.com/embed/UB1O30fR-EE')">
+            <img src="https://images.unsplash.com/photo-1629360021730-3d258452c425?ixid=M3w3MjUzNDh8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBsZWFybmluZyUyMGVkdWNhdGlvbiUyMHN0dWRlbnRzJTIwbGFwdG9wfGVufDB8fHx8MTc1NjgzMjIyNHww&ixlib=rb-4.1.0&fit=fillmax&h=600&w=1200" alt="HTML CSS Course">
+            <div class="card-content">
+              <h3>HTML & CSS Basics</h3>
+              <p>8 lessons • 5 hours</p>
+              <button class="btn">Watch Course</button>
+            </div>
+          </div>
+          <div class="card" onclick="playVideo('Python Programming', 'https://www.youtube.com/embed/rfscVS0vtbw')">
+            <img src="https://images.unsplash.com/photo-1629360021730-3d258452c425?ixid=M3w3MjUzNDh8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBsZWFybmluZyUyMGVkdWNhdGlvbiUyMHN0dWRlbnRzJTIwbGFwdG9wfGVufDB8fHx8MTc1NjgzMjIyNHww&ixlib=rb-4.1.0&fit=fillmax&h=600&w=1200" alt="Python Course">
+            <div class="card-content">
+              <h3>Python Programming</h3>
+              <p>18 lessons • 14 hours</p>
+              <button class="btn">Watch Course</button>
+            </div>
+          </div>
+          <div class="card" onclick="playVideo('Database Design', 'https://www.youtube.com/embed/ztHopE5Wnpc')">
+            <img src="https://images.unsplash.com/photo-1629360021730-3d258452c425?ixid=M3w3MjUzNDh8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBsZWFybmluZyUyMGVkdWNhdGlvbiUyMHN0dWRlbnRzJTIwbGFwdG9wfGVufDB8fHx8MTc1NjgzMjIyNHww&ixlib=rb-4.1.0&fit=fillmax&h=600&w=1200" alt="Database Course">
+            <div class="card-content">
+              <h3>Database Design</h3>
+              <p>12 lessons • 9 hours</p>
+              <button class="btn">Watch Course</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="profile" class="page hidden">
+    <section class="profile" style="margin-top: 80px;">
+      <div class="container">
+        <h2>Learning Dashboard</h2>
+        <div class="dashboard">
+          <div class="stats">
+            <h3>Your Progress</h3>
+            <p><strong>Courses Enrolled:</strong> 6</p>
+            <p><strong>Courses Completed:</strong> 1</p>
+            <p><strong>Hours Learned:</strong> 34</p>
+            <p><strong>Certificates Earned:</strong> 1</p>
+            <div style="margin-top: 2rem;">
+              <h4>Recent Activity</h4>
+              <div style="margin-top: 1rem;">
+                <p class="text-sm">✅ Completed Node.js Backend</p>
+                <p class="text-sm">📚 Started React Development</p>
+                <p class="text-sm">⏳ JavaScript Fundamentals - 60% done</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="video-container" id="videoPlayer">
+              <div class="video-placeholder">
+                <h3>Video Player</h3>
+                <p>Click on a course to start watching</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Smart Buddy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(page => page.classList.add('hidden'));
+      document.getElementById(pageId).classList.remove('hidden');
+      
+      document.querySelectorAll('.nav a').forEach(link => link.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    function playVideo(title, videoUrl) {
+      const player = document.getElementById('videoPlayer');
+      player.innerHTML = `
+        <iframe src="${videoUrl}" 
+                width="100%" height="100%" 
+                frameborder="0" 
+                allowfullscreen>
+        </iframe>
+      `;
+      showPage('profile');
+    }
+
+    // Simulate progress updates
+    function updateProgress() {
+      const progressBars = document.querySelectorAll('.progress-fill');
+      progressBars.forEach((bar, index) => {
+        if (index === 0) {
+          let width = parseInt(bar.style.width) || 60;
+          if (width < 100) {
+            width += Math.random() * 5;
+            bar.style.width = Math.min(width, 100) + '%';
+            bar.parentNode.nextElementSibling.textContent = 
+              width >= 100 ? 'Complete' : Math.floor(width) + '% Complete';
+            bar.parentNode.nextElementSibling.className = 
+              width >= 100 ? 'text-sm text-green' : 'text-sm text-green';
+          }
+        }
+      });
+    }
+
+    setInterval(updateProgress, 3000);
+  </script>
+</body>
+</html>
+ 
