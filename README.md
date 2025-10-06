@@ -26,7 +26,7 @@ Frontend:
 HTML5, CSS3, Bootstrap, React.js
 
 Backend:
-Flask 
+java script
  
 ## OUTPUT ##
 <img width="1919" height="960" alt="Image" src="https://github.com/user-attachments/assets/5e131653-66b4-40ab-ab5b-2695b793257b" />
